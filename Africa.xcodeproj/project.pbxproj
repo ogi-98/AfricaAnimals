@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B430269D265C51F300EDE116 /* ExternalWebLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430269C265C51F300EDE116 /* ExternalWebLinkView.swift */; };
+		B430269E265C51F300EDE116 /* ExternalWebLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430269C265C51F300EDE116 /* ExternalWebLinkView.swift */; };
 		B46C6BFE265A7F7700355620 /* AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C6BEB265A7F7700355620 /* AfricaApp.swift */; };
 		B46C6BFF265A7F7700355620 /* AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C6BEB265A7F7700355620 /* AfricaApp.swift */; };
 		B46C6C00265A7F7700355620 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C6BEC265A7F7700355620 /* ContentView.swift */; };
@@ -65,9 +67,14 @@
 		B46C6C5C265AC3EF00355620 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C6C5A265AC3EF00355620 /* HeadingView.swift */; };
 		B46C6C61265AC62000355620 /* InsetsGaleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C6C60265AC62000355620 /* InsetsGaleryView.swift */; };
 		B46C6C62265AC62000355620 /* InsetsGaleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C6C60265AC62000355620 /* InsetsGaleryView.swift */; };
+		B4DD2CA8265C46C30001F5A0 /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DD2CA7265C46C30001F5A0 /* InsetFactView.swift */; };
+		B4DD2CA9265C46C30001F5A0 /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DD2CA7265C46C30001F5A0 /* InsetFactView.swift */; };
+		B4DD2CAB265C4B2F0001F5A0 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DD2CAA265C4B2F0001F5A0 /* InsetMapView.swift */; };
+		B4DD2CAC265C4B2F0001F5A0 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DD2CAA265C4B2F0001F5A0 /* InsetMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B430269C265C51F300EDE116 /* ExternalWebLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWebLinkView.swift; sourceTree = "<group>"; };
 		B46C6BEB265A7F7700355620 /* AfricaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaApp.swift; sourceTree = "<group>"; };
 		B46C6BEC265A7F7700355620 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B46C6BED265A7F7700355620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +109,8 @@
 		B46C6C57265AC0D600355620 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		B46C6C5A265AC3EF00355620 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		B46C6C60265AC62000355620 /* InsetsGaleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetsGaleryView.swift; sourceTree = "<group>"; };
+		B4DD2CA7265C46C30001F5A0 /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
+		B4DD2CAA265C4B2F0001F5A0 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +230,9 @@
 				B46C6C57265AC0D600355620 /* AnimalDetailView.swift */,
 				B46C6C5A265AC3EF00355620 /* HeadingView.swift */,
 				B46C6C60265AC62000355620 /* InsetsGaleryView.swift */,
+				B4DD2CA7265C46C30001F5A0 /* InsetFactView.swift */,
+				B4DD2CAA265C4B2F0001F5A0 /* InsetMapView.swift */,
+				B430269C265C51F300EDE116 /* ExternalWebLinkView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -370,12 +382,15 @@
 				B46C6C00265A7F7700355620 /* ContentView.swift in Sources */,
 				B46C6C52265ABABC00355620 /* AnimalListItemView.swift in Sources */,
 				B46C6C61265AC62000355620 /* InsetsGaleryView.swift in Sources */,
+				B4DD2CA8265C46C30001F5A0 /* InsetFactView.swift in Sources */,
 				B46C6C43265A8A4000355620 /* MainView.swift in Sources */,
 				B46C6C47265AA77F00355620 /* CoverImageView.swift in Sources */,
 				B46C6C4B265AAAB300355620 /* CoverImageModel.swift in Sources */,
 				B46C6C58265AC0D600355620 /* AnimalDetailView.swift in Sources */,
 				B46C6C55265ABCA800355620 /* AnimalModel.swift in Sources */,
+				B4DD2CAB265C4B2F0001F5A0 /* InsetMapView.swift in Sources */,
 				B46C6C3D265A89DB00355620 /* MapView.swift in Sources */,
+				B430269D265C51F300EDE116 /* ExternalWebLinkView.swift in Sources */,
 				B46C6BFE265A7F7700355620 /* AfricaApp.swift in Sources */,
 				B46C6C40265A8A1700355620 /* GaleryView.swift in Sources */,
 				B46C6C3A265A898F00355620 /* VideoListView.swift in Sources */,
@@ -391,12 +406,15 @@
 				B46C6C01265A7F7700355620 /* ContentView.swift in Sources */,
 				B46C6C53265ABABC00355620 /* AnimalListItemView.swift in Sources */,
 				B46C6C62265AC62000355620 /* InsetsGaleryView.swift in Sources */,
+				B4DD2CA9265C46C30001F5A0 /* InsetFactView.swift in Sources */,
 				B46C6C44265A8A4000355620 /* MainView.swift in Sources */,
 				B46C6C48265AA77F00355620 /* CoverImageView.swift in Sources */,
 				B46C6C4C265AAAB300355620 /* CoverImageModel.swift in Sources */,
 				B46C6C59265AC0D600355620 /* AnimalDetailView.swift in Sources */,
 				B46C6C56265ABCA800355620 /* AnimalModel.swift in Sources */,
+				B4DD2CAC265C4B2F0001F5A0 /* InsetMapView.swift in Sources */,
 				B46C6C3E265A89DB00355620 /* MapView.swift in Sources */,
+				B430269E265C51F300EDE116 /* ExternalWebLinkView.swift in Sources */,
 				B46C6BFF265A7F7700355620 /* AfricaApp.swift in Sources */,
 				B46C6C41265A8A1700355620 /* GaleryView.swift in Sources */,
 				B46C6C3B265A898F00355620 /* VideoListView.swift in Sources */,
