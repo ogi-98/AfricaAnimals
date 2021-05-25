@@ -36,14 +36,64 @@ struct MapView: View {
             
 //            (C) Custom basic annotation (it could be interactive)
             
+//            MapAnnotation(coordinate: item.location) {
+//                Image("logo")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 32, height: 32, alignment: .center)
+//            }//: ANNOTATİON
+            
+//            (D) Custom advenced annotation (it could be interactive)
             MapAnnotation(coordinate: item.location) {
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 32, height: 32, alignment: .center)
-            }//: ANNOTATİON
+                MapCustomAnnotationView(location: item)
+            }
             
         })//: MAP
+        .overlay(
+            HStack(alignment: .center, spacing: 12) {
+                Image("compass")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 48, height: 48, alignment: .center)
+                
+                VStack(alignment: .leading, spacing: 3) {
+                    HStack {
+                        Text("Latidute:")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.latitude)")
+                            .font(.footnote)
+                            .foregroundColor(.white)
+                    }
+                    
+                    Divider()
+                    
+                    HStack {
+                        Text("Longitude:")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.longitude)")
+                            .font(.footnote)
+                            .foregroundColor(.white)
+                    }
+                    
+                }//:VSTACK
+            }//:Hstack
+            .padding(.vertical,12)
+            .padding(.horizontal,16)
+            .background(
+                Color.black
+                    .cornerRadius(8.0)
+                    .opacity(0.6)
+            )
+            .padding()
+            ,alignment: .top
+            
+        )
     }
 }
 
