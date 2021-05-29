@@ -85,6 +85,10 @@
 		B4AC8CA126627ED2001467EC /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC8C9F26627ED2001467EC /* AnimalGridItemView.swift */; };
 		B4AC8CA726628B52001467EC /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AC8CA626628B52001467EC /* Stickers.xcassets */; };
 		B4AC8CAB26628B52001467EC /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B4AC8CA426628B49001467EC /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B4AC8D0F2662A256001467EC /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC8D0E2662A256001467EC /* CreditsView.swift */; };
+		B4AC8D102662A256001467EC /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC8D0E2662A256001467EC /* CreditsView.swift */; };
+		B4AC8D132662A3A7001467EC /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC8D122662A3A7001467EC /* CenterModifier.swift */; };
+		B4AC8D142662A3A7001467EC /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC8D122662A3A7001467EC /* CenterModifier.swift */; };
 		B4DD2CA8265C46C30001F5A0 /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DD2CA7265C46C30001F5A0 /* InsetFactView.swift */; };
 		B4DD2CA9265C46C30001F5A0 /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DD2CA7265C46C30001F5A0 /* InsetFactView.swift */; };
 		B4DD2CAB265C4B2F0001F5A0 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DD2CAA265C4B2F0001F5A0 /* InsetMapView.swift */; };
@@ -162,6 +166,9 @@
 		B4AC8CA426628B49001467EC /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AC8CA626628B52001467EC /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		B4AC8CA826628B52001467EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4AC8CBD26629FFC001467EC /* Stickers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stickers.entitlements; sourceTree = "<group>"; };
+		B4AC8D0E2662A256001467EC /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		B4AC8D122662A3A7001467EC /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 		B4DD2CA7265C46C30001F5A0 /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
 		B4DD2CAA265C4B2F0001F5A0 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +205,7 @@
 		B46C6BEA265A7F7700355620 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B4AC8D112662A38D001467EC /* Modifier */,
 				B46C6C38265A889F00355620 /* App */,
 				B46C6C45265AA75F00355620 /* Views */,
 				B491E92F265D0CB700917574 /* Helper */,
@@ -294,6 +302,7 @@
 				B412E2FA265D871100585DE3 /* MapCustomAnnotationView.swift */,
 				B412E2FD265D90B600585DE3 /* MotionAnimationView.swift */,
 				B4AC8C9F26627ED2001467EC /* AnimalGridItemView.swift */,
+				B4AC8D0E2662A256001467EC /* CreditsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,10 +337,19 @@
 		B4AC8CA526628B49001467EC /* Stickers */ = {
 			isa = PBXGroup;
 			children = (
+				B4AC8CBD26629FFC001467EC /* Stickers.entitlements */,
 				B4AC8CA626628B52001467EC /* Stickers.xcassets */,
 				B4AC8CA826628B52001467EC /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		B4AC8D112662A38D001467EC /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				B4AC8D122662A3A7001467EC /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,8 +527,10 @@
 				B46C6C3A265A898F00355620 /* VideoListView.swift in Sources */,
 				B4AC8CA026627ED2001467EC /* AnimalGridItemView.swift in Sources */,
 				B491E92A265D030900917574 /* VideoListItemView.swift in Sources */,
+				B4AC8D0F2662A256001467EC /* CreditsView.swift in Sources */,
 				B46C6C4F265AAD4600355620 /* CodableBundleExtension.swift in Sources */,
 				B412E2FE265D90B600585DE3 /* MotionAnimationView.swift in Sources */,
+				B4AC8D132662A3A7001467EC /* CenterModifier.swift in Sources */,
 				B46C6C5B265AC3EF00355620 /* HeadingView.swift in Sources */,
 				B491E92D265D0BAB00917574 /* VideoPlayerView.swift in Sources */,
 			);
@@ -541,8 +561,10 @@
 				B46C6C3B265A898F00355620 /* VideoListView.swift in Sources */,
 				B4AC8CA126627ED2001467EC /* AnimalGridItemView.swift in Sources */,
 				B491E92B265D030900917574 /* VideoListItemView.swift in Sources */,
+				B4AC8D102662A256001467EC /* CreditsView.swift in Sources */,
 				B46C6C50265AAD4600355620 /* CodableBundleExtension.swift in Sources */,
 				B412E2FF265D90B600585DE3 /* MotionAnimationView.swift in Sources */,
+				B4AC8D142662A3A7001467EC /* CenterModifier.swift in Sources */,
 				B46C6C5C265AC3EF00355620 /* HeadingView.swift in Sources */,
 				B491E92E265D0BAB00917574 /* VideoPlayerView.swift in Sources */,
 			);
@@ -767,6 +789,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = Stickers/Stickers.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94FYN8Y368;
 				INFOPLIST_FILE = Stickers/Info.plist;
@@ -775,6 +798,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -783,6 +807,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = Stickers/Stickers.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94FYN8Y368;
 				INFOPLIST_FILE = Stickers/Info.plist;
@@ -791,6 +816,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
