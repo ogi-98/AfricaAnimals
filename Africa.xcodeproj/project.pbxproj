@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -84,7 +84,7 @@
 		B4AC8CA026627ED2001467EC /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC8C9F26627ED2001467EC /* AnimalGridItemView.swift */; };
 		B4AC8CA126627ED2001467EC /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC8C9F26627ED2001467EC /* AnimalGridItemView.swift */; };
 		B4AC8CA726628B52001467EC /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AC8CA626628B52001467EC /* Stickers.xcassets */; };
-		B4AC8CAB26628B52001467EC /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B4AC8CA426628B49001467EC /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B4AC8CAB26628B52001467EC /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B4AC8CA426628B49001467EC /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B4AC8D0F2662A256001467EC /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC8D0E2662A256001467EC /* CreditsView.swift */; };
 		B4AC8D102662A256001467EC /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC8D0E2662A256001467EC /* CreditsView.swift */; };
 		B4AC8D132662A3A7001467EC /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC8D122662A3A7001467EC /* CenterModifier.swift */; };
@@ -169,6 +169,7 @@
 		B4AC8CBD26629FFC001467EC /* Stickers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stickers.entitlements; sourceTree = "<group>"; };
 		B4AC8D0E2662A256001467EC /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		B4AC8D122662A3A7001467EC /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		B4AC8D152662A5BD001467EC /* Africa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Africa.entitlements; sourceTree = "<group>"; };
 		B4DD2CA7265C46C30001F5A0 /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
 		B4DD2CAA265C4B2F0001F5A0 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +195,7 @@
 		B46C6BE5265A7F7600355620 = {
 			isa = PBXGroup;
 			children = (
+				B4AC8D152662A5BD001467EC /* Africa.entitlements */,
 				B46C6BEA265A7F7700355620 /* Shared */,
 				B46C6BF4265A7F7700355620 /* iOS */,
 				B46C6BFB265A7F7700355620 /* macOS */,
@@ -575,6 +577,7 @@
 /* Begin PBXTargetDependency section */
 		B4AC8CAA26628B52001467EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = B4AC8CA326628B49001467EC /* Stickers */;
 			targetProxy = B4AC8CA926628B52001467EC /* PBXContainerItemProxy */;
 		};
@@ -697,6 +700,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94FYN8Y368;
 				ENABLE_PREVIEWS = YES;
@@ -709,6 +713,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oguzkaya.Africa;
 				PRODUCT_NAME = Africa;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -719,6 +724,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94FYN8Y368;
 				ENABLE_PREVIEWS = YES;
@@ -731,6 +737,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oguzkaya.Africa;
 				PRODUCT_NAME = Africa;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -798,7 +805,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -816,7 +824,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
